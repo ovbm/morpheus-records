@@ -54,32 +54,3 @@
           </div>
         </div>
       </div>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    new jPlayerPlaylist({
-      jPlayer: "#jquery_jplayer_{{id}}",
-      cssSelectorAncestor: "#jp_container_{{id}}"
-    }, [
-      {{#if audioOneName}}
-      {
-        title:"{{audioOneName}}",
-        mp3:"audio/{{audioOneMp3.filename}}",
-        oga:"audio/{{audioOneMp3.filename}}"
-      }
-      {{/if}}
-      {{#if audioTwoName}}
-      ,{
-        title:"{{audioTwoName}}",
-        mp3:"audio/{{audioTwoMp3.filename}}",
-        oga:"audio/{{audioTwoMp3.filename}}"
-      }
-      {{/if}}
-    ], {
-      swfPath: "../js",
-      supplied: "oga, mp3",
-      wmode: "window",
-      smoothPlayBar: true,
-      keyEnabled: true
-    });
-  });
-</script>
