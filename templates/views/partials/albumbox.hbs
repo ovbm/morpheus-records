@@ -1,0 +1,85 @@
+
+    <div class="cs-style-5 display_hidden nude">
+      <figure class="display_hidden_trigger">
+        <img class="item_thumb" width="150px" src="images/{{image.filename}}" alt="al"/>
+        <figcaption>
+          <h3>{{title}}</h3>
+          <span>{{content.band}}</span>
+          <a href="#" class="trigger_text">expand [+]</a>
+        </figcaption>
+      </figure>
+
+      <!-- album description-->
+        <div class="hidden albumdesc">
+          <h3 class="item_name">{{content.band}} - {{title}}</h3>
+          <!-- audio-->
+          <div id="jquery_jplayer_{{id}}" class="jp-jplayer"></div>
+        <div id="jp_container_{{id}}" class="jp-audio">
+          <div class="jp-type-playlist">
+            <div class="jp-gui jp-interface">
+              <ul class="jp-controls">
+                      <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                      <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                  </ul>
+              <div class="jp-progress">
+                <div class="jp-seek-bar">
+                  <div class="jp-play-bar"></div>
+                </div>
+              </div>
+              <div class="jp-volume-bar">
+                <div class="jp-volume-bar-value" style="width: 80%;"></div>
+              </div>
+              <div class="jp-time-holder">
+                      <div class="jp-current-time"></div>
+                      <div class="jp-duration"></div>
+                  </div>
+                </div>
+            <div class="jp-playlist">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <div class="jp-no-solution" style="display: none;">
+              <span>Update Required</span>
+              To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div>
+          </div>
+        </div>
+          <!-- audio end -->
+
+        <p>{{{content.description}}}</p>
+        <div class="lablecode">
+          <p>{{content.labelcode}}</p>
+            <a class="item_add" target="_blank" href="{{content.link}}">Kaufen</a>
+          </div>
+        </div>
+      </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    new jPlayerPlaylist({
+      jPlayer: "#jquery_jplayer_{{id}}",
+      cssSelectorAncestor: "#jp_container_{{id}}"
+    }, [
+      {{#if audioOneName}}
+      {
+        title:"{{audioOneName}}",
+        mp3:"audio/{{audioOneMp3.filename}}",
+        oga:"audio/{{audioOneMp3.filename}}"
+      }
+      {{/if}}
+      {{#if audioTwoName}}
+      ,{
+        title:"{{audioTwoName}}",
+        mp3:"audio/{{audioTwoMp3.filename}}",
+        oga:"audio/{{audioTwoMp3.filename}}"
+      }
+      {{/if}}
+    ], {
+      swfPath: "../js",
+      supplied: "oga, mp3",
+      wmode: "window",
+      smoothPlayBar: true,
+      keyEnabled: true
+    });
+  });
+</script>

@@ -1,0 +1,1058 @@
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=ef2e0124-eb4b-4ade-9167-5790d04da274&fontids=774938");
+html {
+  font-size: 100%; }
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, form, table, caption, tbody, tfoot, thead, tr, th, td, figure, figcaption, footer, header, menu, nav, audio {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-family: "Futura W02 Medium";
+  text-align: center;
+  color: #fff; }
+
+#header {
+  margin-top: 32px;
+  z-index: 1100; }
+
+#header h1 {
+  color: #fff;
+  text-align: left; }
+
+#header {
+  margin-top: 30px; }
+
+.gallery-image img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+h1, h2, h3, p, a {
+  margin: 0; }
+
+h1 {
+  font-size: 200%;
+  padding: 12px;
+  display: relative; }
+
+h2 {
+  margin: 10px 0 10px 0;
+  font-size: 150%; }
+
+p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px 0 0 0; }
+
+img {
+  width: 100%;
+  display: block; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic; }
+
+a:hover {
+  text-decoration: underline; }
+
+:focus, :active {
+  outline: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*-- Content */
+#contentarea {
+  display: hidden; }
+
+.contentwrap {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left; }
+
+.bandbox {
+  margin: 0 auto;
+  overflow: auto; }
+
+.albumdesc {
+  overflow: hidden; }
+
+.impr {
+  padding: 0 0 0 0; }
+
+/*-- Footer */
+#fb {
+  width: 29px;
+  float: left;
+  display: relative;
+  padding: 0 0 0 1px; }
+
+/*-- Select */
+select {
+  font-family: "Futura W02 Medium";
+  height: 22px;
+  color: #fff;
+  font-size: 16px;
+  border: 0 !important;
+  /*Removes border*/
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /*Removes default style Firefox*/
+  background: url("../images/arrow_down_2.png") no-repeat;
+  background-size: 12px;
+  background-position: 42px 7px;
+  width: 62px;
+  /*Adds background-image*/
+  cursor: pointer; }
+
+select option {
+  color: #000; }
+
+option {
+  background: none;
+  color: #fff; }
+
+/*-- Audio */
+audio {
+  width: 100%; }
+
+.audiotitle {
+  margin: 10px 5px 5px 5px; }
+
+/* #Hidden
+================================================== */
+.display_hidden_trigger {
+  font-style: normal;
+  cursor: pointer; }
+
+.display_hidden p {
+  margin: 0; }
+
+.display_hidden {
+  margin: 12px 0 12px 0; }
+
+.hidden {
+  display: none;
+  padding-top: 15px; }
+
+/*-- From */
+form {
+  padding: 5px; }
+
+input {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  -webkit-appearance: none; }
+
+input.email {
+  display: block;
+  padding: 4px 0;
+  margin: 0px 4% 10px 0;
+  text-indent: 5px;
+  width: 100%;
+  min-width: 130px; }
+
+input.button {
+  display: block;
+  width: 35%;
+  margin: 0 0 10px 0;
+  min-width: 90px; }
+
+/* #Fonts
+================================================== */
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+with any questions regarding Web Fonts:  http://www.linotype.com
+*/
+@font-face {
+  font-family: "Futura W02 Medium";
+  src: url("../fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
+  src: url("../fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("../eot"), url("../fonts/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"), url("../fonts/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"), url("../fonts/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg"); }
+
+#logo {
+  width: 306px;
+  float: left;
+  display: relative;
+  padding: 0 0 0 1px; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    #logo {
+      margin-right: 100%; } }
+
+nav {
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+  text-align: left;
+  padding-left: 0; }
+
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 26px 12px 26px; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    nav ul li {
+      padding: 10px 26px 12px 8px; } }
+
+nav a {
+  font-family: "Futura W02 Medium";
+  font-style: normal;
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none; }
+
+nav a:visited {
+  text-decoration: none; }
+
+nav a:hover {
+  text-decoration: none;
+  box-shadow: 0px 1px 0px #fff, 0px -1px 0px #fff; }
+
+nav a:active {
+  text-decoration: none;
+  box-shadow: 0px 1px 0px #fff, 0px -1px 0px #fff; }
+
+/* #Figcaption
+================================================== */
+figure {
+  margin: 0;
+  position: relative; }
+
+figure img {
+  max-width: 100%;
+  display: block;
+  position: relative; }
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff; }
+
+.nude .albumdesc {
+  background: none; }
+
+.nude figcaption h3 {
+  color: white; }
+
+.nude figcaption a {
+  background: rgba(255, 255, 255, 0); }
+
+figcaption h3 {
+  font-size: 200%;
+  margin: 0;
+  padding: 0; }
+
+figcaption span:before {
+  content: 'by '; }
+
+figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  color: #fff; }
+
+/* Individual Caption Styles */
+/* Caption Style 5 */
+.cs-style-5 figure img {
+  z-index: 10;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s; }
+
+.no-touch .cs-style-5 figure:hover img,
+.cs-style-5 figure.cs-hover img {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  transform: scale(0.4); }
+
+.cs-style-5 figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s; }
+
+.no-touch .cs-style-5 figure:hover figcaption,
+.cs-style-5 figure.cs-hover figcaption {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1; }
+
+.cs-style-5 figure a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
+.no-touch .cs-style-7 figure:hover figcaption h3,
+.no-touch .cs-style-7 figure:hover figcaption span,
+.no-touch .cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption h3,
+.cs-style-7 figure.cs-hover figcaption span,
+.cs-style-7 figure.cs-hover figcaption a {
+  -webkit-transition: opacity 0.3s 0.2s;
+  -moz-transition: opacity 0.3s 0.2s;
+  transition: opacity 0.3s 0.2s;
+  opacity: 1; }
+
+body#music .contentwrap {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  body#music .contentwrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+body#music .musicbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+body#music .musicbox .album:nth-child(3n+3) {
+  width: 31.42857%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    body#music .musicbox .album:nth-child(3n+3) {
+      width: 48.57143%;
+      float: left;
+      margin-right: 2.85714%; } }
+  @media (min-width: 1px) and (max-width: 479px) {
+    body#music .musicbox .album:nth-child(3n+3) {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body#music .musicbox .album:nth-child(2n+2) {
+    width: 48.57143%;
+    float: right;
+    margin-right: 0; } }
+
+@media (min-width: 1px) and (max-width: 479px) {
+  body#music .musicbox .album:nth-child(2n+2) {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
+
+body#music .album {
+  width: 31.42857%;
+  float: left;
+  margin-right: 2.85714%; }
+  @media (min-width: 480px) and (max-width: 768px) {
+    body#music .album {
+      width: 48.57143%;
+      float: left;
+      margin-right: 2.85714%; } }
+  @media (min-width: 1px) and (max-width: 479px) {
+    body#music .album {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+body#music .lablecode {
+  padding: 10px 0 10px 0;
+  text-align: right; }
+
+body#bands .contentwrap {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  body#bands .contentwrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+body#bands .bandbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+body#bands .bandbox div.band:nth-child(2n+2) {
+  width: 48.57143%;
+  float: right;
+  margin-right: 0; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    body#bands .bandbox div.band:nth-child(2n+2) {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+body#bands div.band {
+  width: 48.57143%;
+  float: left;
+  margin-right: 2.85714%; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    body#bands div.band {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+body#about .contentwrap {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  body#about .contentwrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+body#about div.about {
+  padding-left: 34.28571%;
+  padding-right: 34.28571%;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    body#about div.about {
+      padding-left: 0%;
+      padding-right: 0%;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+
+div#footer {
+  margin: 1em 0 4em 0; }
+  div#footer .contentwrap {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    div#footer .contentwrap:after {
+      content: " ";
+      display: block;
+      clear: both; }
+  div#footer .footercol {
+    margin-bottom: 2em;
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%; }
+    @media (min-width: 480px) and (max-width: 768px) {
+      div#footer .footercol {
+        width: 48.57143%;
+        float: left;
+        margin-right: 2.85714%; } }
+    @media (min-width: 1px) and (max-width: 479px) {
+      div#footer .footercol {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    div#footer .mail {
+      width: 48.57143%;
+      float: right;
+      margin-right: 0; } }
+  div#footer .iovi {
+    width: 22.85714%;
+    float: right;
+    margin-right: 0; }
+    @media (min-width: 480px) and (max-width: 768px) {
+      div#footer .iovi {
+        width: 48.57143%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 1px) and (max-width: 479px) {
+      div#footer .iovi {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
+
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.jplayer.org
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010-2012 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 4.3 (jPlayer 2.2.0)
+ * Date: 19th November 2012
+ */
+div.jp-audio,
+div.jp-audio-stream,
+div.jp-video {
+  /* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em
+	 */
+  font-size: 1.25em;
+  /* 1.25em for testing in site pages */
+  /* No parent CSS that can effect the size in the demos ZIP */
+  font-family: "Futura W02 Medium";
+  line-height: 1.6;
+  background-color: none; }
+
+div.jp-audio {
+  width: 306px; }
+
+div.jp-audio-stream {
+  width: 182px; }
+
+div.jp-video-270p {
+  width: 480px; }
+
+div.jp-video-360p {
+  width: 640px; }
+
+div.jp-video-full {
+  /* Rules for IE6 (full-screen) */
+  width: 480px;
+  height: 270px;
+  /* Rules for IE7 (full-screen) - Otherwise the relative container causes other page items that are not position:static (default) to appear over the video/gui. */
+  position: static !important;
+  position: relative; }
+
+/* The z-index rule is defined in this manner to enable Popcorn plugins that add overlays to video area. EG. Subtitles. */
+div.jp-video-full div div {
+  z-index: 1000; }
+
+div.jp-video-full div.jp-jplayer {
+  top: 0;
+  left: 0;
+  position: fixed !important;
+  position: relative;
+  /* Rules for IE6 (full-screen) */
+  overflow: hidden; }
+
+div.jp-video-full div.jp-gui {
+  position: fixed !important;
+  position: static;
+  /* Rules for IE6 (full-screen) */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  /* 1 layer above the others. */ }
+
+div.jp-video-full div.jp-interface {
+  position: absolute !important;
+  position: relative;
+  /* Rules for IE6 (full-screen) */
+  bottom: 0;
+  left: 0; }
+
+div.jp-interface {
+  position: relative;
+  background-color: none;
+  width: 100%; }
+
+div.jp-audio div.jp-type-single div.jp-interface {
+  height: 40px; }
+
+div.jp-audio div.jp-type-playlist div.jp-interface {
+  height: 40px; }
+
+div.jp-audio-stream div.jp-type-single div.jp-interface {
+  height: 40px; }
+
+div.jp-video div.jp-interface {
+  border-top: 1px solid #fff; }
+
+/* @group CONTROLS */
+div.jp-controls-holder {
+  clear: both;
+  width: 440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  top: -8px;
+  /* This negative value depends on the size of the text in jp-currentTime and jp-duration */ }
+
+div.jp-interface ul.jp-controls {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+div.jp-audio ul.jp-controls {
+  width: 306px; }
+
+div.jp-audio-stream ul.jp-controls {
+  width: 142px; }
+
+div.jp-video div.jp-type-single ul.jp-controls {
+  width: 78px;
+  margin-left: 200px; }
+
+div.jp-video div.jp-type-playlist ul.jp-controls {
+  width: 134px;
+  margin-left: 172px; }
+
+div.jp-interface ul.jp-controls li,
+div.jp-video ul.jp-controls {
+  display: inline;
+  float: left; }
+
+div.jp-interface ul.jp-controls a {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px; }
+
+a.jp-pause,
+a.jp-play {
+  display: block;
+  width: 40px;
+  height: 40px; }
+
+a.jp-play {
+  background: url("site/jplayer.blue.monday.png") 0 0 no-repeat; }
+
+a.jp-play:hover {
+  background: url("site/jplayer.blue.monday.png") -41px 0 no-repeat; }
+
+a.jp-pause {
+  background: url("site/jplayer.blue.monday.png") 0 -42px no-repeat;
+  display: none; }
+
+a.jp-pause:hover {
+  background: url("site/jplayer.blue.monday.png") -41px -42px no-repeat; }
+
+a.jp-next,
+a.jp-previous,
+a.jp-stop {
+  width: 28px;
+  height: 28px;
+  margin-top: 6px; }
+
+a.jp-stop {
+  background: url("site/jplayer.blue.monday.png") 0 -83px no-repeat;
+  margin-left: 10px; }
+
+a.jp-stop:hover {
+  background: url("site/jplayer.blue.monday.png") -29px -83px no-repeat; }
+
+a.jp-previous {
+  background: url("site/jplayer.blue.monday.png") 0 -112px no-repeat; }
+
+a.jp-previous:hover {
+  background: url("site/jplayer.blue.monday.png") -29px -112px no-repeat; }
+
+a.jp-next {
+  background: url("site/jplayer.blue.monday.png") 0 -141px no-repeat; }
+
+a.jp-next:hover {
+  background: url("site/jplayer.blue.monday.png") -29px -141px no-repeat; }
+
+/* @end */
+/* @group progress bar */
+div.jp-progress {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+div.jp-audio div.jp-progress {
+  position: absolute;
+  top: 14px;
+  height: 14px; }
+
+div.jp-audio div.jp-type-single div.jp-progress {
+  left: 110px;
+  width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-progress {
+  left: 50px;
+  width: 170px; }
+
+div.jp-video div.jp-progress {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; }
+
+div.jp-seek-bar {
+  background: none;
+  width: 0;
+  height: 100%;
+  cursor: pointer; }
+
+div.jp-play-bar {
+  background: url("site/jplayer.blue.monday.png") 0 -218px repeat-x;
+  width: 0;
+  height: 100%; }
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {
+  background: url("site/jplayer.blue.monday.seeking.gif"); }
+
+/* @end */
+/* @group volume controls */
+a.jp-mute,
+a.jp-unmute,
+a.jp-volume-max {
+  width: 18px;
+  height: 15px;
+  margin-top: 12px; }
+
+div.jp-audio div.jp-type-single a.jp-mute,
+div.jp-audio div.jp-type-single a.jp-unmute {
+  margin-left: 210px; }
+
+div.jp-audio div.jp-type-playlist a.jp-mute,
+div.jp-audio div.jp-type-playlist a.jp-unmute {
+  margin-left: 154px; }
+
+div.jp-audio-stream div.jp-type-single a.jp-mute,
+div.jp-audio-stream div.jp-type-single a.jp-unmute {
+  margin-left: 10px; }
+
+div.jp-audio a.jp-volume-max,
+div.jp-audio-stream a.jp-volume-max {
+  margin-left: 56px; }
+
+div.jp-video a.jp-mute,
+div.jp-video a.jp-unmute,
+div.jp-video a.jp-volume-max {
+  position: absolute;
+  top: 12px;
+  margin-top: 0; }
+
+div.jp-video a.jp-mute,
+div.jp-video a.jp-unmute {
+  left: 50px; }
+
+div.jp-video a.jp-volume-max {
+  left: 134px; }
+
+a.jp-mute {
+  background: url("site/jplayer.blue.monday.png") 0 -170px no-repeat; }
+
+a.jp-mute:hover {
+  background: url("site/jplayer.blue.monday.png") -19px -170px no-repeat; }
+
+a.jp-unmute {
+  background: url("site/jplayer.blue.monday.png") -60px -170px no-repeat;
+  display: none; }
+
+a.jp-unmute:hover {
+  background: url("site/jplayer.blue.monday.png") -79px -170px no-repeat; }
+
+a.jp-volume-max {
+  background: url("site/jplayer.blue.monday.png") 0 -186px no-repeat; }
+
+a.jp-volume-max:hover {
+  background: url("site/jplayer.blue.monday.png") -19px -186px no-repeat; }
+
+div.jp-volume-bar {
+  position: absolute;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  width: 46px;
+  height: 5px;
+  cursor: pointer; }
+
+div.jp-audio div.jp-volume-bar {
+  top: 18px;
+  left: 250px; }
+
+div.jp-audio-stream div.jp-volume-bar {
+  top: 18px;
+  left: 92px; }
+
+div.jp-video div.jp-volume-bar {
+  top: 18px;
+  left: 72px; }
+
+div.jp-volume-bar-value {
+  background: url("site/jplayer.blue.monday.png") 0 -256px repeat-x;
+  width: 0;
+  height: 5px; }
+
+/* @end */
+/* @group current time and duration */
+div.jp-audio div.jp-time-holder {
+  position: absolute;
+  top: 29px;
+  color: #fff;
+  font-size: 16px; }
+
+div.jp-audio div.jp-type-single div.jp-time-holder {
+  left: 110px;
+  width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-time-holder {
+  left: 60px;
+  width: 150px; }
+
+div.jp-current-time,
+div.jp-duration {
+  width: 60px;
+  font-size: 0.64em;
+  font-style: oblique; }
+
+div.jp-current-time {
+  float: left;
+  display: inline; }
+
+div.jp-duration {
+  float: right;
+  display: inline;
+  text-align: right; }
+
+div.jp-video div.jp-current-time {
+  margin-left: 20px; }
+
+div.jp-video div.jp-duration {
+  margin-right: 20px; }
+
+/* @end */
+/* @group playlist */
+div.jp-title {
+  font-weight: bold;
+  text-align: center; }
+
+div.jp-playlist,
+div.jp-title {
+  width: 100%;
+  background-color: none; }
+
+div.jp-type-playlist div.jp-title,
+div.jp-type-single div.jp-playlist,
+div.jp-type-single div.jp-title {
+  border-top: none; }
+
+div.jp-playlist ul,
+div.jp-title ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 0.72em; }
+
+div.jp-title li {
+  padding: 5px 0;
+  font-weight: bold; }
+
+div.jp-playlist li {
+  padding: 5px 0 0 20px; }
+
+div.jp-playlist li div {
+  display: inline; }
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+div.jp-type-playlist div.jp-playlist li:last-child {
+  padding: 5px 0 10px 20px;
+  border-bottom: none; }
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 7px; }
+
+div.jp-type-playlist div.jp-playlist a {
+  color: #fff;
+  text-decoration: none; }
+
+div.jp-type-playlist div.jp-playlist a:hover {
+  color: #fff; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #fff;
+  font-weight: 600; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
+  float: right;
+  display: inline;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #666; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover {
+  color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media {
+  float: right;
+  display: inline;
+  text-align: right;
+  margin-right: 10px; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a {
+  color: #666; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover {
+  color: #0d88c1; }
+
+span.jp-artist {
+  font-size: 0.8em;
+  color: #666; }
+
+/* @end */
+div.jp-video-play {
+  width: 100%;
+  overflow: hidden;
+  /* Important for nested negative margins to work in modern browsers */
+  cursor: pointer;
+  background-color: transparent;
+  /* Makes IE9 work with the active area over the whole video area. IE6/7/8 only have the button as active area. */ }
+
+div.jp-video-270p div.jp-video-play {
+  margin-top: -270px;
+  height: 270px; }
+
+div.jp-video-360p div.jp-video-play {
+  margin-top: -360px;
+  height: 360px; }
+
+div.jp-video-full div.jp-video-play {
+  height: 100%; }
+
+a.jp-video-play-icon {
+  position: relative;
+  display: block;
+  width: 112px;
+  height: 100px;
+  margin-left: -56px;
+  margin-top: -50px;
+  left: 50%;
+  top: 50%;
+  background: url("jplayer.blue.monday.video.play.png") 0 0 no-repeat;
+  text-indent: -9999px; }
+
+div.jp-video-play:hover a.jp-video-play-icon {
+  background: url("jplayer.blue.monday.video.play.png") 0 -100px no-repeat; }
+
+div.jp-jplayer,
+div.jp-jplayer audio {
+  width: 0;
+  height: 0; }
+
+div.jp-jplayer {
+  background-color: #000000; }
+
+/* @group TOGGLES */
+/* The audio toggles are nested inside jp-time-holder */
+ul.jp-toggles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden; }
+
+div.jp-audio .jp-type-single ul.jp-toggles {
+  width: 25px; }
+
+div.jp-audio .jp-type-playlist ul.jp-toggles {
+  width: 55px;
+  margin: 0;
+  position: absolute;
+  left: 325px;
+  top: 50px; }
+
+div.jp-video ul.jp-toggles {
+  margin-top: 10px;
+  width: 100px; }
+
+ul.jp-toggles li {
+  display: block;
+  float: right; }
+
+ul.jp-toggles li a {
+  display: block;
+  width: 25px;
+  height: 18px;
+  text-indent: -9999px;
+  line-height: 100%;
+  /* need this for IE6 */ }
+
+a.jp-full-screen {
+  background: url("site/jplayer.blue.monday.png") 0 -310px no-repeat;
+  margin-left: 20px; }
+
+a.jp-full-screen:hover {
+  background: url("site/jplayer.blue.monday.png") -30px -310px no-repeat; }
+
+a.jp-restore-screen {
+  background: url("site/jplayer.blue.monday.png") -60px -310px no-repeat;
+  margin-left: 20px; }
+
+a.jp-restore-screen:hover {
+  background: url("site/jplayer.blue.monday.png") -90px -310px no-repeat; }
+
+a.jp-repeat {
+  background: url("site/jplayer.blue.monday.png") 0 -290px no-repeat; }
+
+a.jp-repeat:hover {
+  background: url("site/jplayer.blue.monday.png") -30px -290px no-repeat; }
+
+a.jp-repeat-off {
+  background: url("site/jplayer.blue.monday.png") -60px -290px no-repeat; }
+
+a.jp-repeat-off:hover {
+  background: url("site/jplayer.blue.monday.png") -90px -290px no-repeat; }
+
+a.jp-shuffle {
+  background: url("site/jplayer.blue.monday.png") 0 -270px no-repeat;
+  margin-left: 5px; }
+
+a.jp-shuffle:hover {
+  background: url("site/jplayer.blue.monday.png") -30px -270px no-repeat; }
+
+a.jp-shuffle-off {
+  background: url("site/jplayer.blue.monday.png") -60px -270px no-repeat;
+  margin-left: 5px; }
+
+a.jp-shuffle-off:hover {
+  background: url("site/jplayer.blue.monday.png") -90px -270px no-repeat; }
+
+/* @end */
+/* @group NO SOLUTION error feedback */
+.jp-no-solution {
+  padding: 5px;
+  font-size: 0.8em;
+  background-color: #eee;
+  border: 2px solid #009be3;
+  color: #000;
+  display: none; }
+
+.jp-no-solution a {
+  color: #000; }
+
+.jp-no-solution span {
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  font-weight: bold; }
+
+/* @end */

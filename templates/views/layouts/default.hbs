@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Morpheus Records</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/site.css" rel="stylesheet">
+		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+		<script src="/js/jquery.jplayer.min.js" type="text/javascript" ></script>
+		<script src="/js/jplayer.playlist.min.js" type="text/javascript" ></script>
+		<script src="/js/modernizr.custom.js" type="text/javascript"></script>
+
+		{{!-- This file provides the default styling for the KeystoneJS Content Editor
+			- only renders when user is logged in and admin--}}
+		{{{isAdminEditorCSS user}}}
+
+		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		//- Safely remove this block if you are not targeting IE8 --}}
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body id="{{section}}">
+		<div id="header">
+			<div class="contentwrap">
+				<div role="navigation" class="navbar navbar-default">
+					<div class="navbar-header">
+						<a href="/" class="navbar-brand"><img id="logo" src="images/morpheus_records_logo.png"></a>
+					</div>
+					<nav>
+						<ul>
+								{{# each navLinks}}
+								<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+									<a href="{{ href }}">{{ label }}</a>
+								</li>
+							{{/each}}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div id="{{section}}">
+			 {{{body}}}
+		</div>
+
+		<div id="footer">
+			{{> footer}}
+		</div>
+		{{!--
+			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
+			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
+			//- you can upgrade to 2.1.4 (also bundled) for better performance.
+		--}}
+		<script src="/js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript">
+			$.backstretch(["images/bg1.jpg"]);
+
+			$(".display_hidden_trigger").click(function(){
+	      $trigger = $(this);
+	      $triggertext = $trigger.find(".trigger_text");
+	      $content = $trigger.parents('div.display_hidden').find('.hidden');
+	        $content.slideToggle(400, function () {
+	          $triggertext.text(function () {
+	        return $content.is(":visible") ? "collapse [-]" : "expand [+]";
+	          });
+	      });
+	    });
+		</script>
+		{{{isAdminEditorJS user}}}
+	</body>
+</html>

@@ -1,0 +1,138 @@
+$susy: (
+  flow: ltr,
+  output: float,
+  math: fluid,
+  column-width: false,
+  container: 90%, // length or % | auto
+  container-position: center,
+  columns: 12,
+  gutters: .5,
+  gutter-position: after,
+  global-box-sizing: content-box,
+  last-flow: to,
+);
+
+body#music{
+	.contentwrap{
+		@include container;
+	}
+	.musicbox {
+		display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+		-webkit-flex-flow: row wrap;
+		justify-content: flex-start;
+		margin-top:2em;
+		margin-bottom:2em;
+	}
+	.musicbox .album:nth-child(3n+3){
+		@include span (last 4);
+		@include susy-breakpoint(480px 768px){
+			@include span (6);
+		};
+		@include susy-breakpoint(1px 479px){
+			@include span (full);
+		};
+	}
+
+	.musicbox .album:nth-child(2n+2){
+		@include susy-breakpoint(480px 768px){
+			@include span (last 6);
+		};
+		@include susy-breakpoint(1px 479px){
+			@include span (full);
+		};
+	}
+
+	.album{
+		@include span(4);
+		@include susy-breakpoint(480px 768px){
+			@include span (6);
+		};
+		@include susy-breakpoint(1px 479px){
+			@include span (full);
+		};
+	}
+	.lablecode{
+		padding: 10px 0 10px 0;
+		text-align: right;
+		}
+}
+
+body#bands{
+	.contentwrap{
+		@include container;
+	}
+	.bandbox {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		justify-content: flex-start;
+		margin-top:2em;
+		margin-bottom:2em;
+	}
+	.bandbox div.band:nth-child(2n+2){
+		@include span (last 6);
+		@include susy-breakpoint(1px 768px){
+			@include span (full);
+		};
+	}
+	div.band{
+		@include span(6);
+		@include susy-breakpoint(1px 768px){
+			@include span (full);
+		};
+	}
+}
+
+body#about{
+	.contentwrap{
+		@include container;
+	}
+	div.about{
+		@include pad(4);
+		margin-top:2em;
+		margin-bottom:2em;
+		@include susy-breakpoint(1px 768px){
+			@include pad (0);
+			@include span (full);
+		};
+	}
+}
+
+div#footer{
+	margin: 1em 0 4em 0;
+	.contentwrap{
+		@include container;
+	}
+
+	.footercol{
+		margin-bottom: 2em;
+		@include span(3);
+		@include susy-breakpoint(480px 768px){
+			@include span (6);
+		};
+		@include susy-breakpoint(1px 479px){
+			@include span (full);
+		};
+	}
+	.mail{
+		@include susy-breakpoint(480px 768px){
+			@include span (last 6);
+		};
+	}
+	.iovi{
+		@include span(last 3);
+		@include susy-breakpoint(480px 768px){
+			@include span (last 6);
+		};
+		@include susy-breakpoint(1px 479px){
+			@include span (full);
+		};
+	}
+}

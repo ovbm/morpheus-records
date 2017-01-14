@@ -1,0 +1,19 @@
+<div class="cs-style-1 display_hidden nude">
+  <figure class="display_hidden_trigger">
+      <img class="item_thumb" width="150px" src="images/{{image.filename}}" alt="{{title}}"/>
+      <figcaption>
+          <h3>{{title}}</h3>
+          <a href="#" class="trigger_text">expand [+]</a>
+      </figcaption>
+  </figure>
+  <div class="hidden ">
+      <h3 class="band">
+        <a target="_blank" href="{{content.link}}">{{content.linktext}}</a>
+      </h3>
+      <p class="band" >{{{content.description}}}</p></br>
+      <p class="band lineup">{{content.lineup}}</p></br>
+      {{#if content.facebooklink}}
+        <a href="{{content.facebooklink}}" target="_blank"><img id="fb" src="images/FB-f-Logo__white_29.png"></a>
+      {{/if}}
+  </div>
+</div>

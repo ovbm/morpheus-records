@@ -1,0 +1,218 @@
+html {
+	font-size:100%;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, form, table, caption, tbody, tfoot, thead, tr, th, td, figure, figcaption, footer, header, menu, nav, audio {
+	margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+	font-family:"Futura W02 Medium";
+	text-align: center;
+  color:#fff;
+	}
+
+#header{
+	margin-top: 32px;
+	z-index: 1100;
+	}
+
+#header h1{
+	color: #fff;
+	text-align: left;
+	}
+
+  #header {
+  	margin-top: 30px;
+  }
+  .gallery-image img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+
+h1, h2, h3, p, a{
+	margin: 0;
+	}
+
+h1 {
+	font-size: 200%;
+	padding: 12px;
+	display: relative;
+	}
+
+h2 {
+	margin: 10px 0 10px 0;
+	font-size: 150%;
+
+	}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0 0 0;
+	}
+
+img {
+	width:100%;
+	display:block;
+}
+
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-style:italic;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+:focus, :active {
+	outline: 0;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*-- Content */
+
+#contentarea{
+	display:hidden;
+}
+
+.contentwrap{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.bandbox{
+	margin: 0 auto;
+	overflow: auto;
+	}
+
+.albumdesc{
+	overflow: hidden;
+}
+
+.impr{
+	padding: 0 0 0 0;
+}
+
+/*-- Footer */
+#fb{
+	width: 29px;
+	float: left;
+	display: relative;
+	padding: 0 0 0 1px;
+}
+
+/*-- Select */
+
+select{
+	font-family:"Futura W02 Medium";
+	height: 22px;
+	color: #fff;
+	font-size: 16px;
+	 border: 0 !important; /*Removes border*/
+     -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; /*Removes default style Firefox*/
+	background: url('../images/arrow_down_2.png') no-repeat;
+	background-size: 12px ;
+	background-position: 42px 7px;
+	width: 62px;      /*Adds background-image*/
+	cursor:pointer;
+	}
+
+select option{
+		color: #000;
+}
+
+option{
+	background: none;
+	color: #fff;
+}
+
+/*-- Audio */
+
+audio{
+		width: 100%;
+}
+
+.audiotitle{
+		margin:10px 5px 5px 5px;
+}
+
+/* #Hidden
+================================================== */
+.display_hidden_trigger{
+	font-style: normal;
+	cursor:pointer;
+	}
+
+.display_hidden p {
+	margin: 0;
+	}
+
+.display_hidden {
+	margin: 12px 0 12px 0;
+	}
+
+.hidden {
+	display: none;
+	padding-top: 15px;
+	}
+
+/*-- From */
+
+form {
+	padding: 5px;
+}
+
+input {
+	color: #fff;
+	background-color: rgba(255,255,255,0);
+	border:1px solid #fff;
+	-webkit-appearance:none;
+}
+
+input.email {
+	display:block;
+	padding:4px 0;
+	margin:0px 4% 10px 0;
+	text-indent:5px;
+	width:100%;
+	min-width:130px;}
+
+input.button {
+	display:block;
+	width:35%;
+	margin:0 0 10px 0;
+	min-width:90px;
+}
+
+ /* #Fonts
+================================================== */
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+with any questions regarding Web Fonts:  http://www.linotype.com
+*/
+@import url("http://fast.fonts.net/lt/1.css?apiType=css&c=ef2e0124-eb4b-4ade-9167-5790d04da274&fontids=774938");
+@font-face{
+font-family:"Futura W02 Medium";
+src:url("../fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
+src:url("../fonts/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("../eot"),
+	url("../fonts/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"),
+	url("../fonts/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"),
+	url("../fonts/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg");
+}
