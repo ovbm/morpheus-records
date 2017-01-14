@@ -20,6 +20,8 @@ keystone.init({
 	'views': 'templates/views',
 	'view engine': 'hbs',
 
+	'mongo': process.env.MONGO_URI || 'mongodb://localhost/morpheus-records',
+
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
 		partialsDir: 'templates/views/partials',
