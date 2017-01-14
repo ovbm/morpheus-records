@@ -18,11 +18,9 @@ Album.add({
 	createdAt: { type: Date, default: Date.now },
 	publishedAt: Date,
 	image: {
-		type: Types.LocalFile,
-		dest: 'public/images',
-		filename: function(item, file){
-			return item.id + '.' + file.extension;
-		},
+		type: Types.CloudinaryImage,
+		publicID: 'slug',
+		autoCleanup : true,
 	},
 	audioOneName: {
 		type: Types.Text,

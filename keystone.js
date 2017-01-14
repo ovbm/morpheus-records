@@ -28,6 +28,9 @@ keystone.init({
 		extname: '.hbs',
 	}).engine,
 
+	'cloudinary config': 'cloudinary://833979644311893:5uvMhudzZpjt0hXuFKvk4DQEou0@iovi',
+	'cloudinary prefix': 'morpheus',
+	'cloudinary folders' : true,
 	'auto update': true,
 	'session': true,
 	'auth': true,
