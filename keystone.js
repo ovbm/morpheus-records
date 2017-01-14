@@ -21,6 +21,7 @@ keystone.init({
 	'view engine': 'hbs',
 
 	'mongo': process.env.MONGO_URI || 'mongodb://localhost/morpheus-records',
+	'cookie secret': 'jptriseverything',
 
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
