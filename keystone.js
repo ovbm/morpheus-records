@@ -16,7 +16,7 @@ keystone.init({
 
 	'sass': 'public',
 	'static': 'public',
-	'static options': {maxAge:86400000},
+	'static options': {maxAge:2592000000},
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'hbs',
@@ -36,7 +36,7 @@ keystone.init({
 	'cloudinary prefix': 'morpheus',
 	'cloudinary folders' : true,
 	'cloudinary secure': true,
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
