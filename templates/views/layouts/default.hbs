@@ -8,6 +8,8 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
 
+
+
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
 		{{{isAdminEditorCSS user}}}
@@ -51,18 +53,19 @@
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
 			//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		--}}
-
 		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+		<!--<script src="/js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript">
+			$.backstretch(["images/bg1.jpg"]);
+		</script>-->
+
 		<script src="/js/jquery.jplayer.min.js" type="text/javascript" defer></script>
-		<script src="/js/jplayer.playlist.min.js" type="text/javascript" defer  ></script>
+		<script src="/js/jplayer.playlist.min.js" type="text/javascript" defer></script>
 		<script src="/js/modernizr.custom.js" type="text/javascript" defer></script>
 
-		{{> jplayer}}
+		{{> jplayer }}
 
-		<script src="/js/jquery.backstretch.min.js"></script>
 		<script type="text/javascript" defer>
-			$.backstretch(["images/bg1.jpg"]);
-
 			$(".display_hidden_trigger").click(function(){
 	      $trigger = $(this);
 	      $triggertext = $trigger.find(".trigger_text");

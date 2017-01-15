@@ -10,7 +10,13 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, form, 
 body {
   font-family: "Futura W02 Medium";
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  background-image: url("../images/bg1.jpg");
+  background-position: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
 
 #header {
   margin-top: 32px;
