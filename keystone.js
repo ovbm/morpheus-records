@@ -20,6 +20,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'hbs',
+	'frame guard': 'false',
 
 	'mongo': process.env.MONGODB_URI || 'mongodb://localhost/morpheus-records',
 	'cookie secret': 'jptriseverything',
