@@ -22,7 +22,7 @@ keystone.init({
 	'view engine': 'hbs',
 	'frame guard': 'false',
 
-	'mongo': process.env.MONGODB_URI || 'mongodb://localhost/morpheus-records',
+	'mongo': process.env.DB_URI || 'mongodb://localhost/morpheus-records',
 	'cookie secret': 'jptriseverything',
 
 	'custom engine': handlebars.create({
