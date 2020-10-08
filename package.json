@@ -11,12 +11,12 @@
     "dotenv": "^8.2.0",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5",
-    "keystone": "^0.3.22",
+    "keystone": "^4.2.1",
     "lodash": "^4.13.1",
     "moment": "^2.10.6",
-    "node-sass": "^3.3.2",
-    "node-sass-middleware": "^0.9.7",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "underscore": "^1.11.0",
+    "node-sass-middleware": "^0.11.0"
   },
   "devDependencies": {
     "eslint": "^2.12.0",

@@ -11,6 +11,15 @@ var Album = new keystone.List('Album', {
 	defaultSort: '-createdAt',
 });
 
+var myStorage = new keystone.Storage({
+  adapter: keystone.Storage.Adapters.FS,
+  fs: {
+		path: keystone.expandPath('./audio'),
+		publicPath: '/public/audio',
+  },
+});
+
+
 Album.add({
 	title: { type: String, required: true },
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
@@ -26,35 +35,23 @@ Album.add({
 		type: Types.Text,
 	},
 	audioOneMp3: {
-		type: Types.LocalFile,
-		dest: 'public/audio',
-		filename: function(item, file){
-			return item.id + '.' + file.extension;
-		},
+		type: Types.File,
+		storage: myStorage,
 	},
 	audioOneOgg: {
-		type: Types.LocalFile,
-		dest: 'public/audio',
-		filename: function(item, file){
-			return item.id + '.' + file.extension;
-		},
+		type: Types.File,
+		storage: myStorage,
 	},
 	audioTwoName: {
 		type: Types.Text,
 	},
 	audioTwoMp3: {
-		type: Types.LocalFile,
-		dest: 'public/audio',
-		filename: function(item, file){
-			return item.id + '.' + file.extension;
-		},
+		type: Types.File,
+		storage: myStorage,
 	},
 	audioTwoOgg: {
-		type: Types.LocalFile,
-		dest: 'public/audio',
-		filename: function(item, file){
-			return item.id + '.' + file.extension;
-		},
+		type: Types.File,
+		storage: myStorage,
 	},
 	content: {
 		band: { type: Types.Text },
