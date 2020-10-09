@@ -14,8 +14,8 @@ var Album = new keystone.List('Album', {
 var myStorage = new keystone.Storage({
   adapter: keystone.Storage.Adapters.FS,
   fs: {
-		path: keystone.expandPath('./audio'),
-		publicPath: '/public/audio',
+		path: keystone.expandPath('./public/audio'),
+		publicPath: '/audio',
   },
 });
 
