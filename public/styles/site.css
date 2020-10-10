@@ -12,7 +12,7 @@ body {
   text-align: center;
   color: #fff;
   background-image: url("../images/bg1.jpg");
-  background-position: 50%
+  background-position: 50%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ with any questions regarding Web Fonts:  http://www.linotype.com
       margin-right: 100%; } }
 
 nav {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   position: relative;
   z-index: 1000;
   text-align: left;
@@ -931,7 +931,7 @@ div.jp-video-play {
   overflow: hidden;
   /* Important for nested negative margins to work in modern browsers */
   cursor: pointer;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   /* Makes IE9 work with the active area over the whole video area. IE6/7/8 only have the button as active area. */ }
 
 div.jp-video-270p div.jp-video-play {
