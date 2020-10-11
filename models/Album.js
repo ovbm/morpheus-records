@@ -16,6 +16,9 @@ var myStorage = new keystone.Storage({
   fs: {
 		path: keystone.expandPath('./public/audio'),
 		publicPath: '/audio',
+		generateFilename: function({originalname}){
+			return originalname;
+		},
   },
 });
 
