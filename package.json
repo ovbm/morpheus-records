@@ -2,7 +2,7 @@
   "name": "morpheus-records",
   "version": "1.0.0",
   "engines": {
-    "node": "14.4.0"
+    "node": "14"
   },
   "private": true,
   "dependencies": {
